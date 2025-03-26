@@ -1,0 +1,4 @@
+setuptools >= 40.9.0
+matplotlib
+numpy
+scikit-image >= 0.16.1
