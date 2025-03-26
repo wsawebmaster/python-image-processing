@@ -23,11 +23,6 @@ O pacote image_processing é usado para:
 - Twine
 - Git e Github
 
-## Links uteis de documentação
-
-[pip](https://pip.pypa.io/en/stable/) para instalar o package_name
-[setup.py](https://setuptools.readthedocs.io/en/latest/setuptools.html)
-
 ### Comandos de instalação
 
 	pip install -r requirements.txt
@@ -60,6 +55,33 @@ O pacote image_processing é usado para:
 7 - Instalar pacote usando Pypi
 
 	python -m pip install python-image-processing
+
+## Links uteis
+
+[pip](https://pip.pypa.io/en/stable/)
+
+[setup.py](https://setuptools.readthedocs.io/en/latest/setuptools.html)
+
+[Testes automatizados](https://docs.pytest.org/en/latest/goodpractices.html)
+
+[Uso do Tox](https://tox.wiki/en/latest/)
+
+
+## Usar o pacote
+
+	from image_processing.utils impor io, plot
+	from image_processing.processing import combination, transformation
+
+	image1 = io.read_image('caminho_fisico_imagem1.jpg')
+	image2 = io.read_image('caminho_fisico_imagem2.jpg')
+
+	plot.plot_image(image1)
+	plot.plot_image(image2)
+
+	result_image = combination.transfer_histogram(image1, image2)
+	plot.plot_result(image1, image2, result_image)
+
+
 
 ---
 ---
