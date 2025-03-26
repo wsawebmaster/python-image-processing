@@ -14,7 +14,7 @@ setup(
     description="A package to process images",
     long_description=page_description,
     long_description_content_type="text/markdown",
-    url="https://github"
+    url="https://github.com/wsawebmaster/python-image-processing",
     packages=find_packages(),
     install_requires=requirements,
     python_requires=">=3.6",
